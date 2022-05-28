@@ -31,7 +31,6 @@ for i in blob:
     tmpBlob.append(tmp)
 
 blob = tmpBlob
-print(blob)
 
 positive = []
 negative = []
@@ -46,11 +45,6 @@ for text in blob:
         negative.append(tmp)
     else:
         neutral.append(tmp)
-
-
-print(positive)
-print(negative)
-print(neutral)
 
 # graph positive and negative
 plt.hist([positive, negative], stacked=True, color=['g', 'r'], label=['positive', 'negative'])
